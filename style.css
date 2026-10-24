@@ -1,0 +1,40 @@
+.window {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+.windowheader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    justify-content: space-between;
+    margin-top: 8px;
+    user-select: none;
+}
+
+.closebutton {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #EC6B5E;
+    border-radius: 16px;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+.taskbar-button {
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.taskbar-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
